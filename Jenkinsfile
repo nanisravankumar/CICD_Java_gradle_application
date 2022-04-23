@@ -7,7 +7,7 @@ pipeline{
         stage("sonar qube code quality analysis"){
             agent {
                 docker {
-                    image = 'openjdk:8'
+                    image 'openjdk:8'
                 }
             }
             steps {
